@@ -1,6 +1,5 @@
 
-
-# 📄 **README — Export du Meilleur Modèle (Machine Learning)**
+📄 **README — Export du Meilleur Modèle (Machine Learning)**
 
 ## 🎯 Objectif
 Après avoir entraîné plusieurs modèles de prédiction du risque cardiovasculaire (RandomForest, Logistic Regression), nous avons sélectionné **le meilleur modèle** selon des métriques adaptées au contexte médical (Recall, F1-score, ROC AUC).
@@ -21,7 +20,6 @@ Ce fichier doit contenir :
 - la liste des features dans le bon ordre
 C’est ce que nous appelons un **model package**.
 ---
-
 ## 🏆 Sélection du meilleur modèle
 Après comparaison des performances :
 
@@ -34,7 +32,6 @@ Nous avons donc choisi :
 ### ✔️ **Modèle final : Logistic Regression (class_weight="balanced")**
 
 ---
-
 ## 📦 Construction du “model_package”
 Pour que l’API puisse utiliser le modèle, nous avons regroupé dans un dictionnaire Python :
 
@@ -90,13 +87,11 @@ model_api/
 ```
 
 - Le notebook reste dans `model_training/`
-- Le modèle `.pkl` est placé dans `model_api/` car c’est là que l’API le chargera
+- Le modèle `.pkl` sera placé dans `model_api/` car c’est là que l’API le chargera
 
 ---
-
 ## 🚀 Étape suivante
 L’API FastAPI pourra maintenant :
-
 1. charger `cardio_model.pkl`
 2. appliquer le scaler
 3. préparer les données dans le bon ordre
