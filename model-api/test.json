@@ -1,0 +1,20 @@
+{
+  "General_Health": "Good",
+  "Checkup": "Yes",
+  "Exercise": "Yes",
+  "Skin_Cancer": "No",
+  "Other_Cancer": "No",
+  "Depression": "No",
+  "Diabetes": "No",
+  "Arthritis": "No",
+  "Sex": "Male",
+  "Age_Category": "80+",
+  "Height_cm": 175.0,
+  "Weight_kg": 78.0,
+  "BMI": 25.5,
+  "Smoking_History": "Never",
+  "Alcohol_Consumption": 0.0,
+  "Fruit_Consumption": 12.0,
+  "Green_Vegetables_Consumption": 3.0,
+  "FriedPotato_Consumption": 8.0
+}
