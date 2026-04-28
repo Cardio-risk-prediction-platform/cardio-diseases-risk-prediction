@@ -7,7 +7,7 @@ Pour lancer le swagger,
 - installer des dépendances du fichier requirements.txt
 - se placer dans le dossier model-training, exécuter le fichier .ipynb pour avoir le fichier cardio-model.pkl
 - se placer dans le dossier model-api
-- exécuter la commande python train.py
+- exécuter la commande python train.py si fichier cardio_model.pkl inexistant
 - lancer la commande uvicorn app:app --reload
 
 L'url du swagger est accessible via http://127.0.0.1:8000/docs
