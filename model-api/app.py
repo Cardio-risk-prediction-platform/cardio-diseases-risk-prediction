@@ -1,8 +1,17 @@
 from fastapi import FastAPI
 from schemas import PatientData
 from model_loader import predict_disease
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="Cardiovascular Diseases Risk Prediction API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def root():
@@ -17,7 +26,7 @@ def predict_route(patient: PatientData):
         "Low"
         if probability < 0.3
         else "Medium"
-        if probability < 0.7
+        if probability < 0.66
         else "High"
     )
 

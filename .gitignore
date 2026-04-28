@@ -14,7 +14,4 @@ __pycache__/
 # OS
 .DS_Store
 
-# Models lourds (optionnel)
-*.pkl
-
 model-training/mlruns
